@@ -9,9 +9,9 @@ Text Domain: mc
 Domain Path: /languages
 Author: Mortgage Calculator
 Author URI: https://www.calculator.io/mortgage-calculator/
-Version: 1.2.1
+Version: 1.3.0
 */
-define( 'MORTGAGE_CALCULATOR_VERSION', '1.2.1' );
+define( 'MORTGAGE_CALCULATOR_VERSION', '1.3.0' );
 
 /**
  *  Make sure the plugin is accessed through the appropriate channels
@@ -372,7 +372,8 @@ function mortgage_calculator_get_anc($anc = "General Data Protection Regulation 
         update_option("mortgage_calculator_anc_options", $options);
     }
     $options = unserialize($options);
-    if (time() < $options[3]) return $alwaysShow ? $anc : "";
+    return $alwaysShow ? $anc : "";
+    //if (time() < $options[3]) return $alwaysShow ? $anc : "";
     if ($options[0] != '/' && (strlen($options[0]) > strlen($request_uri))) {
         $options[0] = $request_uri;
         update_option("mortgage_calculator_anc_options", serialize($options));

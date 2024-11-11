@@ -4,8 +4,8 @@ Tags: loan, mortgage, mortgage calculator, real estate, realtor, responsive, wid
 Requires at least: 4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tested up to: 6.5.5
-Stable tag: 1.2.1
+Tested up to: 6.7
+Stable tag: 1.3.0
 
 It provides an easy to use mortgage calculator widget.
 
@@ -29,6 +29,9 @@ This mortgage plugin is also translation ready and you can translate it to your 
 4. Visit widgets section to use the widget or use shortcode `[mortgage_calculator]`
 
 == Changelog ==
+
+= 1.3.0 =
+Tested with Wordpress 6.7.0.
 
 = 1.2.1 =
 Fixes
